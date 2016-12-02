@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'StringInflections'
-    s.version           = '0.0.3'
+    s.version           = '0.0.4'
     s.summary           = 'Methods to pluralize, singularize, camelcase, and underscore strings'
     s.homepage          = 'https://github.com/sadawi/StringInflections'
     s.license           = { :type => 'MIT' }
