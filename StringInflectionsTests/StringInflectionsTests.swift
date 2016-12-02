@@ -51,4 +51,9 @@ class StringInflectionsTests: XCTestCase {
         XCTAssertEqual("matrices".singularized(), "matrix")
         XCTAssertEqual("women".singularized(), "woman")
     }
+    
+    func testCustomInflections() {
+        Inflector.pluralizer.inflect("chicken", as: "people")
+        XCTAssertEqual("chicken".pluralized(), "people")
+    }
 }
