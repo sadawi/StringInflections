@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import StringInflections
+import StringInflections
 
 class StringInflectionsTests: XCTestCase {
     
@@ -21,6 +21,14 @@ class StringInflectionsTests: XCTestCase {
         super.tearDown()
     }
     
+    func testInflector() {
+        var inflector = Inflector()
+        inflector.inflect("dog", as: "dogz")
+        
+        XCTAssertEqual(inflector.apply(to: "camel"), "camel")
+        XCTAssertEqual(inflector.apply(to: "dog"), "dogz")
+    }
+    
     func testUnderscore() {
         let string = "camelCaseExample"
         XCTAssertEqual(string.underscored(), "camel_case_example")
@@ -28,7 +36,19 @@ class StringInflectionsTests: XCTestCase {
     
     func testCamelCase() {
         let string = "camel_case_example"
-        XCTAssertEqual(string.underscored(), "camelCaseExample")
+        XCTAssertEqual(string.camelCased(lowercaseFirst: false), "CamelCaseExample")
+        XCTAssertEqual(string.camelCased(lowercaseFirst: true), "camelCaseExample")
     }
     
+    func testPlural() {
+        XCTAssertEqual("dog".pluralized(), "dogs")
+        XCTAssertEqual("matrix".pluralized(), "matrices")
+        XCTAssertEqual("woman".pluralized(), "women")
+    }
+    
+    func testSingular() {
+        XCTAssertEqual("dogs".singularized(), "dog")
+        XCTAssertEqual("matrices".singularized(), "matrix")
+        XCTAssertEqual("women".singularized(), "woman")
+    }
 }
