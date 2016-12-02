@@ -10,7 +10,9 @@ import Foundation
 
 public extension String {
     func camelCased(lowercaseFirst: Bool = true) -> String {
-        return self.components(separatedBy: "_").enumerated().map { (index, part) in
+        return self.replacingMatches(of: " +", with: "_")
+            .components(separatedBy: "_")
+            .enumerated().map { (index, part) in
             if index == 0 && lowercaseFirst {
                 return part.lowercased()
             } else {
