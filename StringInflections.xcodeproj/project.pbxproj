@@ -11,6 +11,9 @@
 		228512E61DF20A4B009BF22A /* StringInflectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228512E51DF20A4B009BF22A /* StringInflectionsTests.swift */; };
 		228512E81DF20A4B009BF22A /* StringInflections.h in Headers */ = {isa = PBXBuildFile; fileRef = 228512DA1DF20A4B009BF22A /* StringInflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		228512F21DF20AEB009BF22A /* String+inflections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228512F11DF20AEB009BF22A /* String+inflections.swift */; };
+		228512F41DF20BCB009BF22A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 228512F31DF20BCB009BF22A /* Podfile */; };
+		DE0973308CBBBC0CFA548361 /* Pods_StringInflections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BF62EB89FA99AD9249FCBE /* Pods_StringInflections.framework */; };
+		FD43E9675FA9E2BE9F3C3AAA /* Pods_StringInflectionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6B17AD7848189BFE312E25 /* Pods_StringInflectionsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,13 @@
 		228512E51DF20A4B009BF22A /* StringInflectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInflectionsTests.swift; sourceTree = "<group>"; };
 		228512E71DF20A4B009BF22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228512F11DF20AEB009BF22A /* String+inflections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+inflections.swift"; sourceTree = "<group>"; };
+		228512F31DF20BCB009BF22A /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		6CA0AAAD93593293BB5C3A4B /* Pods-StringInflections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflections.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflections/Pods-StringInflections.debug.xcconfig"; sourceTree = "<group>"; };
+		8E6B17AD7848189BFE312E25 /* Pods_StringInflectionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringInflectionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93437E4411DF7CF8A5AF345 /* Pods-StringInflectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflectionsTests/Pods-StringInflectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF78AFE0ECF974EB3B238429 /* Pods-StringInflectionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflectionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflectionsTests/Pods-StringInflectionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7BF62EB89FA99AD9249FCBE /* Pods_StringInflections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringInflections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF41F1A93DC9B72A7A58F695 /* Pods-StringInflections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflections.release.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflections/Pods-StringInflections.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0973308CBBBC0CFA548361 /* Pods_StringInflections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				228512E11DF20A4B009BF22A /* StringInflections.framework in Frameworks */,
+				FD43E9675FA9E2BE9F3C3AAA /* Pods_StringInflectionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +67,12 @@
 		228512CD1DF20A4B009BF22A = {
 			isa = PBXGroup;
 			children = (
+				228512F31DF20BCB009BF22A /* Podfile */,
 				228512D91DF20A4B009BF22A /* StringInflections */,
 				228512E41DF20A4B009BF22A /* StringInflectionsTests */,
 				228512D81DF20A4B009BF22A /* Products */,
+				FCE03BF9F11E2EC4B8EC98A4 /* Pods */,
+				4D987FAB3B99B8120B76CA19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +104,26 @@
 			path = StringInflectionsTests;
 			sourceTree = "<group>";
 		};
+		4D987FAB3B99B8120B76CA19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF62EB89FA99AD9249FCBE /* Pods_StringInflections.framework */,
+				8E6B17AD7848189BFE312E25 /* Pods_StringInflectionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCE03BF9F11E2EC4B8EC98A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0AAAD93593293BB5C3A4B /* Pods-StringInflections.debug.xcconfig */,
+				FF41F1A93DC9B72A7A58F695 /* Pods-StringInflections.release.xcconfig */,
+				A93437E4411DF7CF8A5AF345 /* Pods-StringInflectionsTests.debug.xcconfig */,
+				EF78AFE0ECF974EB3B238429 /* Pods-StringInflectionsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228512EB1DF20A4B009BF22A /* Build configuration list for PBXNativeTarget "StringInflections" */;
 			buildPhases = (
+				79AF51D1C9FEE0A7008E4E7C /* [CP] Check Pods Manifest.lock */,
 				228512D21DF20A4B009BF22A /* Sources */,
 				228512D31DF20A4B009BF22A /* Frameworks */,
 				228512D41DF20A4B009BF22A /* Headers */,
 				228512D51DF20A4B009BF22A /* Resources */,
+				16FF0DD079B33F8D32176AC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228512EE1DF20A4B009BF22A /* Build configuration list for PBXNativeTarget "StringInflectionsTests" */;
 			buildPhases = (
+				B766E4FF3E3FD722430DB7FF /* [CP] Check Pods Manifest.lock */,
 				228512DC1DF20A4B009BF22A /* Sources */,
 				228512DD1DF20A4B009BF22A /* Frameworks */,
 				228512DE1DF20A4B009BF22A /* Resources */,
+				4A8869B027D185EBF313576B /* [CP] Embed Pods Frameworks */,
+				75F46CA433A3FE9E8E1BEB96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228512F41DF20BCB009BF22A /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +237,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16FF0DD079B33F8D32176AC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StringInflections/Pods-StringInflections-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8869B027D185EBF313576B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StringInflectionsTests/Pods-StringInflectionsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F46CA433A3FE9E8E1BEB96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StringInflectionsTests/Pods-StringInflectionsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AF51D1C9FEE0A7008E4E7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B766E4FF3E3FD722430DB7FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		228512D21DF20A4B009BF22A /* Sources */ = {
@@ -326,6 +445,7 @@
 		};
 		228512EC1DF20A4B009BF22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA0AAAD93593293BB5C3A4B /* Pods-StringInflections.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -347,6 +467,7 @@
 		};
 		228512ED1DF20A4B009BF22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF41F1A93DC9B72A7A58F695 /* Pods-StringInflections.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -367,8 +488,8 @@
 		};
 		228512EF1DF20A4B009BF22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93437E4411DF7CF8A5AF345 /* Pods-StringInflectionsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7E8WS6RJ2L;
 				INFOPLIST_FILE = StringInflectionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -380,8 +501,8 @@
 		};
 		228512F01DF20A4B009BF22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF78AFE0ECF974EB3B238429 /* Pods-StringInflectionsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7E8WS6RJ2L;
 				INFOPLIST_FILE = StringInflectionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -410,6 +531,7 @@
 				228512ED1DF20A4B009BF22A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		228512EE1DF20A4B009BF22A /* Build configuration list for PBXNativeTarget "StringInflectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +540,7 @@
 				228512F01DF20A4B009BF22A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
