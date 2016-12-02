@@ -9,11 +9,11 @@
 import Foundation
 
 public extension String {
-    func camelCased(lowercaseFirst: Bool = true) -> String {
+    func camelCased(uppercaseFirst: Bool = false) -> String {
         return self.replacingMatches(of: " +", with: "_")
             .components(separatedBy: "_")
             .enumerated().map { (index, part) in
-            if index == 0 && lowercaseFirst {
+            if index == 0 && !uppercaseFirst {
                 return part.lowercased()
             } else {
                 return part.capitalized

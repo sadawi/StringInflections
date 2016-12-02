@@ -36,11 +36,11 @@ class StringInflectionsTests: XCTestCase {
     
     func testCamelCase() {
         let string = "camel_case_example"
-        XCTAssertEqual(string.camelCased(lowercaseFirst: false), "CamelCaseExample")
-        XCTAssertEqual(string.camelCased(lowercaseFirst: true), "camelCaseExample")
+        XCTAssertEqual(string.camelCased(uppercaseFirst: true), "CamelCaseExample")
+        XCTAssertEqual(string.camelCased(uppercaseFirst: false), "camelCaseExample")
 
-        XCTAssertEqual("random camel case".camelCased(lowercaseFirst: true), "randomCamelCase")
-        XCTAssertEqual("This Was   Good".camelCased(lowercaseFirst: true), "thisWasGood")
+        XCTAssertEqual("random camel case".camelCased(), "randomCamelCase")
+        XCTAssertEqual("This Was   Good".camelCased(), "thisWasGood")
     }
     
     func testPlural() {
