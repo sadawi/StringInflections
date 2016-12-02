@@ -94,12 +94,10 @@
 		228512D91DF20A4B009BF22A /* StringInflections */ = {
 			isa = PBXGroup;
 			children = (
+				228512FB1DF21B69009BF22A /* extensions */,
+				228512FC1DF21B6E009BF22A /* utilities */,
 				228512DA1DF20A4B009BF22A /* StringInflections.h */,
 				228512DB1DF20A4B009BF22A /* Info.plist */,
-				228512F11DF20AEB009BF22A /* String+case.swift */,
-				228512F51DF21145009BF22A /* String+regex.swift */,
-				228512F71DF21182009BF22A /* String+inflections.swift */,
-				228512F91DF21AD4009BF22A /* Inflector.swift */,
 			);
 			path = StringInflections;
 			sourceTree = "<group>";
@@ -111,6 +109,24 @@
 				228512E71DF20A4B009BF22A /* Info.plist */,
 			);
 			path = StringInflectionsTests;
+			sourceTree = "<group>";
+		};
+		228512FB1DF21B69009BF22A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				228512F11DF20AEB009BF22A /* String+case.swift */,
+				228512F51DF21145009BF22A /* String+regex.swift */,
+				228512F71DF21182009BF22A /* String+inflections.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		228512FC1DF21B6E009BF22A /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				228512F91DF21AD4009BF22A /* Inflector.swift */,
+			);
+			name = utilities;
 			sourceTree = "<group>";
 		};
 		4D987FAB3B99B8120B76CA19 /* Frameworks */ = {
