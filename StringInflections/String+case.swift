@@ -31,21 +31,20 @@ public extension String {
             .replacingMatches(of: "([A-Z]+)([A-Z][a-z])", with: "$1\(separator)$2")
             .replacingMatches(of: "([a-z\\d])([A-Z])", with: "$1\(separator)$2")
             .replacingMatches(of: "[- ]", with: separator)
-            .lowercased()
     }
 
     /**
      Converts "camelCased" to "camel_cased" and "Normal spacing" to "normal_spacing".
      */
     func underscored() -> String {
-        return self.joiningWords(with: "_")
+        return self.joiningWords(with: "_").lowercased()
     }
     
     /**
      Converts "camelCased" to "camel-cased" and "Normal spacing" to "normal-spacing".
      */
     func kebabCased() -> String {
-        return self.joiningWords(with: "-")
+        return self.joiningWords(with: "-").lowercased()
     }
     
     /**
