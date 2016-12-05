@@ -6,6 +6,13 @@
 * `string.camelcased()`: `"justInCase"`
 * `string.camelcased(uppercaseFirst: true)`: `"JustInCase"`
 * `string.underscored()`: `"just_in_case"`
+* `string.kebabCased()`: `"just-in-case"`
+
+There's also a StringCase enum.
+
+```swift
+"my string".to(case: .camel)
+```
 
 ## Plural and singular
 
