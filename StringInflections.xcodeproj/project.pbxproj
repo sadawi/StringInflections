@@ -16,6 +16,7 @@
 		228512F81DF21182009BF22A /* String+inflections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228512F71DF21182009BF22A /* String+inflections.swift */; };
 		228512FA1DF21AD4009BF22A /* Inflector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228512F91DF21AD4009BF22A /* Inflector.swift */; };
 		228512FE1DF21BBC009BF22A /* StringInflections.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 228512FD1DF21BBC009BF22A /* StringInflections.podspec */; };
+		229AD3A61DF61EE000BA3517 /* StringCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AD3A51DF61EE000BA3517 /* StringCase.swift */; };
 		DE0973308CBBBC0CFA548361 /* Pods_StringInflections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BF62EB89FA99AD9249FCBE /* Pods_StringInflections.framework */; };
 		FD43E9675FA9E2BE9F3C3AAA /* Pods_StringInflectionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6B17AD7848189BFE312E25 /* Pods_StringInflectionsTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		228512F71DF21182009BF22A /* String+inflections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+inflections.swift"; sourceTree = "<group>"; };
 		228512F91DF21AD4009BF22A /* Inflector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inflector.swift; sourceTree = "<group>"; };
 		228512FD1DF21BBC009BF22A /* StringInflections.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = StringInflections.podspec; sourceTree = "<group>"; };
+		229AD3A51DF61EE000BA3517 /* StringCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCase.swift; sourceTree = "<group>"; };
 		6CA0AAAD93593293BB5C3A4B /* Pods-StringInflections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflections.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflections/Pods-StringInflections.debug.xcconfig"; sourceTree = "<group>"; };
 		8E6B17AD7848189BFE312E25 /* Pods_StringInflectionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringInflectionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93437E4411DF7CF8A5AF345 /* Pods-StringInflectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringInflectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringInflectionsTests/Pods-StringInflectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				228512FC1DF21B6E009BF22A /* utilities */,
 				228512DA1DF20A4B009BF22A /* StringInflections.h */,
 				228512DB1DF20A4B009BF22A /* Info.plist */,
+				229AD3A51DF61EE000BA3517 /* StringCase.swift */,
 			);
 			path = StringInflections;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				228512FA1DF21AD4009BF22A /* Inflector.swift in Sources */,
 				228512F81DF21182009BF22A /* String+inflections.swift in Sources */,
 				228512F61DF21145009BF22A /* String+regex.swift in Sources */,
+				229AD3A61DF61EE000BA3517 /* StringCase.swift in Sources */,
 				228512F21DF20AEB009BF22A /* String+case.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

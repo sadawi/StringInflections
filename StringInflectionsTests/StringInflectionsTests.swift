@@ -32,6 +32,9 @@ class StringInflectionsTests: XCTestCase {
     func testUnderscore() {
         let string = "camelCaseExample"
         XCTAssertEqual(string.underscored(), "camel_case_example")
+        
+        let string2 = "normal Spacing"
+        XCTAssertEqual(string2.underscored(), "normal_spacing")
     }
     
     func testCamelCase() {
@@ -41,6 +44,10 @@ class StringInflectionsTests: XCTestCase {
 
         XCTAssertEqual("random camel case".camelCased(), "randomCamelCase")
         XCTAssertEqual("This Was   Good".camelCased(), "thisWasGood")
+    }
+    
+    func testCases() {
+        XCTAssertEqual("Some test".to(case: .snake), "some_test")
     }
     
     func testPlural() {
