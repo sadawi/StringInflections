@@ -15,4 +15,5 @@ public enum StringCase {
     case upperCamel
     case lowerCamel
     case snake
+    case kebab
 }

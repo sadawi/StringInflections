@@ -99,11 +99,11 @@
 		228512D91DF20A4B009BF22A /* StringInflections */ = {
 			isa = PBXGroup;
 			children = (
+				229AD3A51DF61EE000BA3517 /* StringCase.swift */,
 				228512FB1DF21B69009BF22A /* extensions */,
 				228512FC1DF21B6E009BF22A /* utilities */,
 				228512DA1DF20A4B009BF22A /* StringInflections.h */,
 				228512DB1DF20A4B009BF22A /* Info.plist */,
-				229AD3A51DF61EE000BA3517 /* StringCase.swift */,
 			);
 			path = StringInflections;
 			sourceTree = "<group>";

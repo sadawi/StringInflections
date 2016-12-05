@@ -46,6 +46,14 @@ class StringInflectionsTests: XCTestCase {
         XCTAssertEqual("This Was   Good".camelCased(), "thisWasGood")
     }
     
+    func testKebab() {
+        let string = "camelCaseExample"
+        XCTAssertEqual(string.kebabCased(), "camel-case-example")
+        
+        let string2 = "normal Spacing"
+        XCTAssertEqual(string2.kebabCased(), "normal-spacing")
+    }
+    
     func testCases() {
         XCTAssertEqual("Some test".to(case: .snake), "some_test")
     }
