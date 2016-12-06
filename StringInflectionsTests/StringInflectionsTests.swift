@@ -77,8 +77,9 @@ class StringInflectionsTests: XCTestCase {
         XCTAssertEqual("chicken".pluralized(), "people")
     }
     
+    let cases:[StringCase] = [.upperCamel, .lowerCamel, .snake, .kebab]
+    
     func testIdempotency() {
-        let cases:[StringCase] = [.upper, .lower, .capitalized, .upperCamel, .lowerCamel, .snake, .kebab]
         let string = "this is an Example"
         for stringCase in cases {
             let once = string.to(case: stringCase)
@@ -86,4 +87,5 @@ class StringInflectionsTests: XCTestCase {
             XCTAssertEqual(once, twice)
         }
     }
+    
 }
