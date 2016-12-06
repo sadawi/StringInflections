@@ -76,4 +76,14 @@ class StringInflectionsTests: XCTestCase {
         Inflector.pluralizer.inflect("chicken$", as: "people")
         XCTAssertEqual("chicken".pluralized(), "people")
     }
+    
+    func testIdempotency() {
+        let cases:[StringCase] = [.upper, .lower, .capitalized, .upperCamel, .lowerCamel, .snake, .kebab]
+        let string = "this is an Example"
+        for stringCase in cases {
+            let once = string.to(case: stringCase)
+            let twice = once.to(case: stringCase)
+            XCTAssertEqual(once, twice)
+        }
+    }
 }
