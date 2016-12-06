@@ -15,9 +15,7 @@ public extension String {
      - parameter uppercaseFirst: Whether the first letter should be uppercase.
      */
     func camelCased(uppercaseFirst: Bool = false) -> String {
-        let decamelized = self.joiningWords(with: "_")
-        
-        return decamelized.replacingMatches(of: " +", with: "_")
+        return self.uncamelCased().replacingMatches(of: " +", with: "_")
             .components(separatedBy: "_")
             .enumerated().map { (index, part) in
             if index == 0 && !uppercaseFirst {
@@ -29,24 +27,27 @@ public extension String {
     }
 
     private func joiningWords(with separator: String) -> String {
+        return self.replacingMatches(of: "[- ]", with: separator)
+    }
+    
+    func uncamelCased() -> String {
         return self
-            .replacingMatches(of: "([A-Z]+)([A-Z][a-z])", with: "$1\(separator)$2")
-            .replacingMatches(of: "([a-z\\d])([A-Z])", with: "$1\(separator)$2")
-            .replacingMatches(of: "[- ]", with: separator)
+            .replacingMatches(of: "([A-Z]+)([A-Z][a-z])", with: "$1 $2")
+            .replacingMatches(of: "([a-z\\d])([A-Z])", with: "$1 $2")
     }
 
     /**
      Converts "camelCased" to "camel_cased" and "Normal spacing" to "normal_spacing".
      */
     func underscored() -> String {
-        return self.joiningWords(with: "_").lowercased()
+        return self.uncamelCased().joiningWords(with: "_").lowercased()
     }
     
     /**
      Converts "camelCased" to "camel-cased" and "Normal spacing" to "normal-spacing".
      */
     func kebabCased() -> String {
-        return self.joiningWords(with: "-").lowercased()
+        return self.uncamelCased().joiningWords(with: "-").lowercased()
     }
     
     /**
